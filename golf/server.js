@@ -25,6 +25,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/customers", customers);
 app.use("/tee_times", tee_times);
 
-app.listen(port, function() {
-  console.log("listening on port: ", port);
-});
+module.exports = { app };
